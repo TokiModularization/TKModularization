@@ -1,0 +1,72 @@
+PODS:
+  - Masonry (1.1.0)
+  - TKMAccountModule (0.1.7):
+    - TKMAccountModule/Core (= 0.1.7)
+  - TKMAccountModule/Core (0.1.7):
+    - Masonry
+    - TKMAccountModule/Interface
+    - TKMAccountModule/SourceMode
+    - TKMInfoManager
+    - TKModule
+    - TKMResourceManager
+  - TKMAccountModule/Interface (0.1.7)
+  - TKMAccountModule/SourceMode (0.1.7)
+  - TKMInfoManager (0.1.2):
+    - TKMInfoManager/Core (= 0.1.2)
+  - TKMInfoManager/Core (0.1.2):
+    - TKMInfoManager/SourceMode
+    - TKMRequest
+  - TKMInfoManager/SourceMode (0.1.2)
+  - TKMInitializeModule (0.1.5):
+    - TKMInitializeModule/Core (= 0.1.5)
+  - TKMInitializeModule/Core (0.1.5):
+    - TKMInfoManager
+    - TKMInitializeModule/Interface
+    - TKMInitializeModule/SourceMode
+    - TKModule
+    - TKMResourceManager
+  - TKMInitializeModule/Interface (0.1.5)
+  - TKMInitializeModule/SourceMode (0.1.5)
+  - TKModule (0.1.2):
+    - TKModule/Core (= 0.1.2)
+  - TKModule/Core (0.1.2):
+    - TKModule/SourceMode
+  - TKModule/SourceMode (0.1.2)
+  - TKMRequest (0.1.1):
+    - TKMRequest/Core (= 0.1.1)
+  - TKMRequest/Core (0.1.1):
+    - TKMRequest/SourceMode
+  - TKMRequest/SourceMode (0.1.1)
+  - TKMResourceManager (0.1.1):
+    - TKMResourceManager/Core (= 0.1.1)
+  - TKMResourceManager/Core (0.1.1):
+    - TKMResourceManager/SourceMode
+  - TKMResourceManager/SourceMode (0.1.1)
+
+DEPENDENCIES:
+  - TKMAccountModule
+  - TKMInitializeModule
+
+SPEC REPOS:
+  https://github.com/TokiPods/specs.git:
+    - TKMAccountModule
+    - TKMInfoManager
+    - TKMInitializeModule
+    - TKModule
+    - TKMRequest
+    - TKMResourceManager
+  https://mirrors.bfsu.edu.cn/git/CocoaPods/Specs.git:
+    - Masonry
+
+SPEC CHECKSUMS:
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  TKMAccountModule: 969c58fab04383fb7ac30e3edd6e7e09e8c3becd
+  TKMInfoManager: a50da3fb65c06585bcc9d5dbaf23cbd5fa18a841
+  TKMInitializeModule: e31cf30e88f99e4b32babf26037e35a14c624763
+  TKModule: ebabe7fe5ba86ff3647d620d79b5285afd810bc1
+  TKMRequest: 3a4f1e31de13cbbe79af9fc26a403794c74a4d37
+  TKMResourceManager: 04897146ebd311971f484439d1af06f8f2771d35
+
+PODFILE CHECKSUM: 6c3f4e0c698d31a1d3b6b1ff8837e034c7ba1ca0
+
+COCOAPODS: 1.10.1
