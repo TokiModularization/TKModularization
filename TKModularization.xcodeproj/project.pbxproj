@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		FEE67C46260DE44000DBE15E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEE67C45260DE44000DBE15E /* Assets.xcassets */; };
 		FEE67C49260DE44000DBE15E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEE67C47260DE44000DBE15E /* LaunchScreen.storyboard */; };
 		FEE67C4C260DE44000DBE15E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE67C4B260DE44000DBE15E /* main.m */; };
+		FEE67C6B260DE81B00DBE15E /* TKModule+Mock.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE67C6A260DE81B00DBE15E /* TKModule+Mock.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		FEE67C48260DE44000DBE15E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FEE67C4A260DE44000DBE15E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FEE67C4B260DE44000DBE15E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FEE67C6A260DE81B00DBE15E /* TKModule+Mock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TKModule+Mock.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +63,6 @@
 				12A5B681B408476A4425825E /* Pods-TKModularization.debug.xcconfig */,
 				3D77B95E5CB90CC63019970F /* Pods-TKModularization.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -92,6 +93,7 @@
 				FEE67C3D260DE43D00DBE15E /* SceneDelegate.m */,
 				FEE67C3F260DE43D00DBE15E /* ViewController.h */,
 				FEE67C40260DE43D00DBE15E /* ViewController.m */,
+				FEE67C69260DE81B00DBE15E /* TKModule */,
 				FEE67C42260DE43D00DBE15E /* Main.storyboard */,
 				FEE67C45260DE44000DBE15E /* Assets.xcassets */,
 				FEE67C47260DE44000DBE15E /* LaunchScreen.storyboard */,
@@ -99,6 +101,14 @@
 				FEE67C4B260DE44000DBE15E /* main.m */,
 			);
 			path = TKModularization;
+			sourceTree = "<group>";
+		};
+		FEE67C69260DE81B00DBE15E /* TKModule */ = {
+			isa = PBXGroup;
+			children = (
+				FEE67C6A260DE81B00DBE15E /* TKModule+Mock.m */,
+			);
+			path = TKModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +227,7 @@
 				FEE67C41260DE43D00DBE15E /* ViewController.m in Sources */,
 				FEE67C3B260DE43D00DBE15E /* AppDelegate.m in Sources */,
 				FEE67C4C260DE44000DBE15E /* main.m in Sources */,
+				FEE67C6B260DE81B00DBE15E /* TKModule+Mock.m in Sources */,
 				FEE67C3E260DE43D00DBE15E /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
