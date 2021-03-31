@@ -45,6 +45,8 @@ PODS:
 
 DEPENDENCIES:
   - TKMAccountModule
+  - TKMAccountModule/Interface
+  - TKMInfoManager
   - TKMInitializeModule
 
 SPEC REPOS:
@@ -67,6 +69,6 @@ SPEC CHECKSUMS:
   TKMRequest: 3a4f1e31de13cbbe79af9fc26a403794c74a4d37
   TKMResourceManager: 04897146ebd311971f484439d1af06f8f2771d35
 
-PODFILE CHECKSUM: 6c3f4e0c698d31a1d3b6b1ff8837e034c7ba1ca0
+PODFILE CHECKSUM: 1c60fd528bb2e7a501e943472bde77400cc787d1
 
 COCOAPODS: 1.10.1

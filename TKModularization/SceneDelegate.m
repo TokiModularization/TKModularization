@@ -7,12 +7,26 @@
 
 #import "SceneDelegate.h"
 
+#import <TKMInitializeModule/TKMInitializeModule.h>
+#import <TKMAccountModule/TKMAccountModule.h>
+
 @interface SceneDelegate ()
 
 @end
 
 @implementation SceneDelegate
 
+#pragma mark - openURL
+
+- (void)scene:(UIScene *)scene openURLContexts:(NSSet<UIOpenURLContext *> *)URLContexts {
+    SEL selector = NSSelectorFromString(URLContexts.allObjects.firstObject.URL.absoluteString);
+    
+    if ([[TKModule shared] respondsToSelector:selector]) {
+        IMP imp = [[TKModule shared] methodForSelector:selector];
+        void (*func)(id, SEL) = (void *)imp;
+        func([TKModule shared], selector);
+    }
+}
 
 - (void)scene:(UIScene *)scene willConnectToSession:(UISceneSession *)session options:(UISceneConnectionOptions *)connectionOptions {
     // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.

@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E27760DCADE5B627FAABBF3B /* libPods-TKModularizationWidgetExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6A654979E36EE92D34A9598 /* libPods-TKModularizationWidgetExtension.a */; };
 		E9779634CCADDE408B67D7AF /* libPods-TKModularization.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD264318CC684A31E3A935E0 /* libPods-TKModularization.a */; };
+		FE2AF298261329330093B243 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE2AF297261329330093B243 /* WidgetKit.framework */; };
+		FE2AF29A261329330093B243 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE2AF299261329330093B243 /* SwiftUI.framework */; };
+		FE2AF29D261329330093B243 /* TKModularizationWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2AF29C261329330093B243 /* TKModularizationWidget.swift */; };
+		FE2AF29F261329380093B243 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE2AF29E261329380093B243 /* Assets.xcassets */; };
+		FE2AF2A3261329380093B243 /* TKModularizationWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FE2AF296261329330093B243 /* TKModularizationWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		FEE67C3B260DE43D00DBE15E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE67C3A260DE43D00DBE15E /* AppDelegate.m */; };
 		FEE67C3E260DE43D00DBE15E /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE67C3D260DE43D00DBE15E /* SceneDelegate.m */; };
 		FEE67C41260DE43D00DBE15E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE67C40260DE43D00DBE15E /* ViewController.m */; };
@@ -18,10 +24,44 @@
 		FEE67C6B260DE81B00DBE15E /* TKModule+Mock.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE67C6A260DE81B00DBE15E /* TKModule+Mock.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		FE2AF2A1261329380093B243 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEE67C2E260DE43D00DBE15E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE2AF295261329330093B243;
+			remoteInfo = TKModularizationWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FE2AF2A4261329380093B243 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FE2AF2A3261329380093B243 /* TKModularizationWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		003354F4643170EA686D803D /* Pods-TKModularizationWidgetExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TKModularizationWidgetExtension.debug.xcconfig"; path = "Target Support Files/Pods-TKModularizationWidgetExtension/Pods-TKModularizationWidgetExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		12A5B681B408476A4425825E /* Pods-TKModularization.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TKModularization.debug.xcconfig"; path = "Target Support Files/Pods-TKModularization/Pods-TKModularization.debug.xcconfig"; sourceTree = "<group>"; };
 		3D77B95E5CB90CC63019970F /* Pods-TKModularization.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TKModularization.release.xcconfig"; path = "Target Support Files/Pods-TKModularization/Pods-TKModularization.release.xcconfig"; sourceTree = "<group>"; };
+		AB661F6632C35E69E6B2DFFC /* Pods-TKModularizationWidgetExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TKModularizationWidgetExtension.release.xcconfig"; path = "Target Support Files/Pods-TKModularizationWidgetExtension/Pods-TKModularizationWidgetExtension.release.xcconfig"; sourceTree = "<group>"; };
 		AD264318CC684A31E3A935E0 /* libPods-TKModularization.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TKModularization.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6A654979E36EE92D34A9598 /* libPods-TKModularizationWidgetExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TKModularizationWidgetExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE2AF296261329330093B243 /* TKModularizationWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TKModularizationWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE2AF297261329330093B243 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		FE2AF299261329330093B243 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		FE2AF29C261329330093B243 /* TKModularizationWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TKModularizationWidget.swift; sourceTree = "<group>"; };
+		FE2AF29E261329380093B243 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FE2AF2A0261329380093B243 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE2AF2B626132DC40093B243 /* ObjectiveCBridgeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectiveCBridgeHeader.h; sourceTree = "<group>"; };
 		FEE67C36260DE43D00DBE15E /* TKModularization.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TKModularization.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEE67C39260DE43D00DBE15E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FEE67C3A260DE43D00DBE15E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -38,6 +78,16 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		FE2AF293261329330093B243 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE2AF29A261329330093B243 /* SwiftUI.framework in Frameworks */,
+				FE2AF298261329330093B243 /* WidgetKit.framework in Frameworks */,
+				E27760DCADE5B627FAABBF3B /* libPods-TKModularizationWidgetExtension.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FEE67C33260DE43D00DBE15E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -53,6 +103,9 @@
 			isa = PBXGroup;
 			children = (
 				AD264318CC684A31E3A935E0 /* libPods-TKModularization.a */,
+				FE2AF297261329330093B243 /* WidgetKit.framework */,
+				FE2AF299261329330093B243 /* SwiftUI.framework */,
+				F6A654979E36EE92D34A9598 /* libPods-TKModularizationWidgetExtension.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -62,14 +115,28 @@
 			children = (
 				12A5B681B408476A4425825E /* Pods-TKModularization.debug.xcconfig */,
 				3D77B95E5CB90CC63019970F /* Pods-TKModularization.release.xcconfig */,
+				003354F4643170EA686D803D /* Pods-TKModularizationWidgetExtension.debug.xcconfig */,
+				AB661F6632C35E69E6B2DFFC /* Pods-TKModularizationWidgetExtension.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		FE2AF29B261329330093B243 /* TKModularizationWidget */ = {
+			isa = PBXGroup;
+			children = (
+				FE2AF29C261329330093B243 /* TKModularizationWidget.swift */,
+				FE2AF29E261329380093B243 /* Assets.xcassets */,
+				FE2AF2A0261329380093B243 /* Info.plist */,
+				FE2AF2B626132DC40093B243 /* ObjectiveCBridgeHeader.h */,
+			);
+			path = TKModularizationWidget;
 			sourceTree = "<group>";
 		};
 		FEE67C2D260DE43D00DBE15E = {
 			isa = PBXGroup;
 			children = (
 				FEE67C38260DE43D00DBE15E /* TKModularization */,
+				FE2AF29B261329330093B243 /* TKModularizationWidget */,
 				FEE67C37260DE43D00DBE15E /* Products */,
 				50B8954C9A30321AAC2F3C20 /* Pods */,
 				3F6A7CA5851E71AD04036CD8 /* Frameworks */,
@@ -80,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				FEE67C36260DE43D00DBE15E /* TKModularization.app */,
+				FE2AF296261329330093B243 /* TKModularizationWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,6 +182,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		FE2AF295261329330093B243 /* TKModularizationWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE2AF2A7261329380093B243 /* Build configuration list for PBXNativeTarget "TKModularizationWidgetExtension" */;
+			buildPhases = (
+				F5038D299E2328F134B21766 /* [CP] Check Pods Manifest.lock */,
+				FE2AF292261329330093B243 /* Sources */,
+				FE2AF293261329330093B243 /* Frameworks */,
+				FE2AF294261329330093B243 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TKModularizationWidgetExtension;
+			productName = TKModularizationWidgetExtension;
+			productReference = FE2AF296261329330093B243 /* TKModularizationWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		FEE67C35260DE43D00DBE15E /* TKModularization */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FEE67C4F260DE44000DBE15E /* Build configuration list for PBXNativeTarget "TKModularization" */;
@@ -123,10 +209,12 @@
 				FEE67C33260DE43D00DBE15E /* Frameworks */,
 				FEE67C34260DE43D00DBE15E /* Resources */,
 				84D4FF76FE9623326305BD39 /* [CP] Copy Pods Resources */,
+				FE2AF2A4261329380093B243 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FE2AF2A2261329380093B243 /* PBXTargetDependency */,
 			);
 			name = TKModularization;
 			productName = TKModularization;
@@ -139,8 +227,12 @@
 		FEE67C2E260DE43D00DBE15E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
+					FE2AF295261329330093B243 = {
+						CreatedOnToolsVersion = 12.4;
+					};
 					FEE67C35260DE43D00DBE15E = {
 						CreatedOnToolsVersion = 12.4;
 					};
@@ -160,11 +252,20 @@
 			projectRoot = "";
 			targets = (
 				FEE67C35260DE43D00DBE15E /* TKModularization */,
+				FE2AF295261329330093B243 /* TKModularizationWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		FE2AF294261329330093B243 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE2AF29F261329380093B243 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FEE67C34260DE43D00DBE15E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -217,9 +318,39 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F5038D299E2328F134B21766 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TKModularizationWidgetExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		FE2AF292261329330093B243 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE2AF29D261329330093B243 /* TKModularizationWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FEE67C32260DE43D00DBE15E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -233,6 +364,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FE2AF2A2261329380093B243 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE2AF295261329330093B243 /* TKModularizationWidgetExtension */;
+			targetProxy = FE2AF2A1261329380093B243 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FEE67C42260DE43D00DBE15E /* Main.storyboard */ = {
@@ -254,6 +393,56 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		FE2AF2A5261329380093B243 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 003354F4643170EA686D803D /* Pods-TKModularizationWidgetExtension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B3AFGM9JL7;
+				INFOPLIST_FILE = TKModularizationWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TK.TKModularization.TKModularizationWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "${SRCROOT}//TKModularizationWidget/ObjectiveCBridgeHeader.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FE2AF2A6261329380093B243 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB661F6632C35E69E6B2DFFC /* Pods-TKModularizationWidgetExtension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B3AFGM9JL7;
+				INFOPLIST_FILE = TKModularizationWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TK.TKModularization.TKModularizationWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "${SRCROOT}//TKModularizationWidget/ObjectiveCBridgeHeader.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		FEE67C4D260DE44000DBE15E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -370,6 +559,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 12A5B681B408476A4425825E /* Pods-TKModularization.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -389,6 +579,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3D77B95E5CB90CC63019970F /* Pods-TKModularization.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -407,6 +598,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		FE2AF2A7261329380093B243 /* Build configuration list for PBXNativeTarget "TKModularizationWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE2AF2A5261329380093B243 /* Debug */,
+				FE2AF2A6261329380093B243 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FEE67C31260DE43D00DBE15E /* Build configuration list for PBXProject "TKModularization" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

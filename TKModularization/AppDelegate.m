@@ -7,6 +7,9 @@
 
 #import "AppDelegate.h"
 
+#import <TKMInitializeModule/TKMInitializeModule.h>
+#import <TKMAccountModule/TKMAccountModule.h>
+
 @interface AppDelegate ()
 
 @end
@@ -19,6 +22,18 @@
     return YES;
 }
 
+#pragma mark - openURL
+
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
+    SEL selector = NSSelectorFromString(url.scheme);
+    
+    if ([[TKModule shared] respondsToSelector:selector]) {
+        IMP imp = [[TKModule shared] methodForSelector:selector];
+        void (*func)(id, SEL) = (void *)imp;
+        func([TKModule shared], selector);
+    }
+    return YES;
+}
 
 #pragma mark - UISceneSession lifecycle
 
